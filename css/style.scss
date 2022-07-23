@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size:1rem;
+    font-family: DMsans, serif;
+}
+body {
+    background: hsl(29, 77%, 85%);
+}
+/** fonts */
+@font-face { font-family: DMsans; 
+    src: url('fonts/DMSans-Regular.ttf'); } 
+/** module */    
+.spending{
+    min-width: 200px;
+    max-width: 22rem;
+    min-height:30rem;
+}
+.balance, .chart{
+    width: 100%;
+    padding: 1rem;
+    background: hsl(10, 79%, 65%);
+    border-radius:1rem;
+    margin:1rem;
+    position: relative;
+}
+.balance p{
+    font-size:1rem;
+    color: #fff;
+}
+.total{
+    font-size:1.5rem;
+}
+.logo{
+    position: absolute;
+    top:0.8rem;
+    right:0.8rem;
+}
+.chart{
+    background: white;
+}
+#spendingChartArea{
+    display: flex;
+    min-height: 13rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+}
+
+.bar{
+    height:1rem;
+    width:2rem;
+    background:hsl(10, 79%, 65%);
+    border-radius:0.2rem;
+    position: relative;
+}
+/*#spendingChartArea .day:nth-child(5) .bar{
+    background: green;
+}*/
+
+.value{
+    position: absolute;
+    display:none;
+    color:white;
+    background:hsl(25, 47%, 15%);
+    border-radius:0.2rem;
+    padding:0.2rem;
+    font-size:0.5rem;
+    top:-1.5rem;
+    left:0;
+}
+.data{
+    margin: 1rem 0 0 0;
+    padding: 1.5rem 0 0 0; 
+    border-top: 0.2rem solid #ccc3;
+
+    display: flex;
+    justify-content: space-around;
+}
+.bold{
+    font-weight: bold;
+}
+.align-right{
+    text-align: right;
+}
