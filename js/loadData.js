@@ -23,6 +23,7 @@ function plot_data(spendingData) {
 function highlight_day(){
     const d = new Date();
     let day = d.getDay();
+    if(day == 0){ day = 7; } // sunday is 0 but it's the 7th child
     let bar = "#spendingChartArea .day:nth-child("+day+") .bar";
     $(bar).css("background", "hsl(186, 34%, 60%)");
 }
